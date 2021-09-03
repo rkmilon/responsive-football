@@ -1,0 +1,57 @@
+
+
+body{
+    background-color: green;
+}
+
+/* ----------------
+player section styles start  
+---------------------------*/
+.player-profile{
+    margin-top: 21px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.player {
+    width: 300px;
+    height: 444px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+
+.player-pic{
+    width: 300px;
+    height: 256px;
+}
+h2{
+    color: #18191F;
+}
+.player-details{
+    color: 6C6C6C;
+}
+/* ----------------
+player section styles end  
+---------------------------*/
+
+/* -------------------------
+news section styless start
+---------------------------- */
+.news{
+    display: flex;
+    align-items: center;
+
+}
+.news-image{
+    width: 567px;
+    height: 427px:
+}
+/* -------------------------
+news section styless start
+---------------------------- */
