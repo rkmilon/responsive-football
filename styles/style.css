@@ -23,14 +23,62 @@ main{
     margin-top: 21px;
     margin-bottom: 30px;
 }
+.watch-now-button{
+    width: 120px;
+    height: 24px;
+    background-color: #E02C6D; 
+    padding: 10px 24px;
+    transition: transform .3s;
+    }
+.watch-now-button:hover{
+        background-color: lightskyblue; 
+        transform: translateX(5px);
+     }
+
+.watch-now-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+      }
+    
 p{
     font-size: 16px;
 }
 
+/* ------------Header styles start----------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    padding-bottom: 100px;
+}
+.banner-section{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 30px;
+}
+.banner-left{
+    width: 485px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-left h1{
+    font-size: 64px;
+    font-style: bold;
+    color: white;
+}
 
-/* ----------------
-player article section styles start  
----------------------------*/
+.banner-right img{
+    width: 556px;
+    height: 456px;
+}
+/* ------------Header styles end----------------- */
+
+/* ------player article section styles start  ----------*/
 
 .player-article{
     width: 1050px;
@@ -90,22 +138,7 @@ news section styless start
 .news-text h1{
         font-size: 48px;
     }
-.watch-now-button{
-    background-color: #E02C6D; 
-    border: none;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  
-     }
 
-.watch-now-button a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-style: normal;
-      }
 
 .news-article img{
     width: 567px;
