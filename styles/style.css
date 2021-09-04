@@ -23,19 +23,19 @@ main{
     margin-top: 21px;
     margin-bottom: 30px;
 }
-.watch-now-button{
+.button{
     width: 120px;
     height: 24px;
     background-color: #E02C6D; 
     padding: 10px 24px;
     transition: transform .3s;
     }
-.watch-now-button:hover{
+.button:hover{
         background-color: lightskyblue; 
         transform: translateX(5px);
      }
 
-.watch-now-button a{
+.button a{
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -53,6 +53,35 @@ header{
     align-items: center;
     background-color: blue;
     padding-bottom: 100px;
+}
+nav{
+    margin-top: 42px;
+}
+
+.menu ul{
+    list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+.menu ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+li:hover:not(.active) {
+    background-color: lightskyblue;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+.menu ul li a{
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 3px;
+    color: white;
+}
+#log-in{
+    float: right;
 }
 .banner-section{
     display: flex;
@@ -75,7 +104,13 @@ header{
 .banner-right img{
     width: 556px;
     height: 456px;
+    transition: transform .3s;
 }
+.banner-right:hover{
+    transform: translateX(5px);
+
+}
+
 /* ------------Header styles end----------------- */
 
 /* ------player article section styles start  ----------*/
@@ -146,9 +181,20 @@ news section styless start
     margin-left: 69px;
 }
 
-/* -------------------------
-news section styless start
----------------------------- */
+/* ------------news section styless start----------- */
+
+/*-------------- gallery styles start -------------- */
+.gallery-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 244px;
+
+}
+
+.gallery-image img:hover{
+    border: 1px solid #777;
+}
+/*-------------- gallery styles start -------------- */
 
 /*------------ footer styles start----------  */
 .footer{
