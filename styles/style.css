@@ -269,29 +269,42 @@ news section styless start
  /* For mobile phones: */
 @media only screen and (max-width: 688px) {
     .container{
-        width: 100%;
+        flex-direction: column;
     }
-    main, .top-banner, .banner-section, .player-article, .news-article, .gallery{
+    main, .player-article, .news-article, .gallery, .news-article {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 5px;
         align-items: center;
+        align-content: center;
     }
-    main, .top-banner, .banner-section, .player-article, .news-article, .gallery{
+    main, .top-banner, .banner-section, .banner-left, .player-article, .news-article {
         flex-direction: column;
+        width: 100%;
     } 
+    .news-article img{
+        margin-left: -89px;
+        margin-top: 100px;
+    }
+   .news-text{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
   }
 
   /* --------tablet devices ------- */
-  @media only screen and (min-width:689px;) and (max-width: 992px;) {
-    .container{
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        flex-direction: column;
         width: 100%;
     }
-    main, .top-banner, .banner-section, .player-article, .news-article, .gallery{
-        display: grid;
+    main, .banner-section, .player-article, .news-article, .gallery{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
-    main, .top-banner, .banner-section, .player-article, .news-article, .gallery{
+    main, .top-banner, .banner-section, .player-article, .news-article {
         flex-direction: column;
+        width: 100%;
     } 
+    
   }
